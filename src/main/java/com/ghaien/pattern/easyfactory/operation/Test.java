@@ -1,5 +1,7 @@
 package com.ghaien.pattern.easyfactory.operation;
 
+import java.util.Scanner;
+
 /**
  * 测试
  *
@@ -10,26 +12,16 @@ public class Test {
 
     public static void main(String[] args) {
         OperationFactory of = new OperationFactory();
-        AbstractOperation add = of.createOperation(OperationFactory.OPERATION_TYPE_ADD);
-        add.setNumberA(3);
-        add.setNumberB(4);
-        System.out.println(add.getResult());
-
-        AbstractOperation sub = of.createOperation(OperationFactory.OPERATION_TYPE_SUB);
-        sub.setNumberA(3);
-        sub.setNumberB(4);
-        System.out.println(sub.getResult());
-
-        AbstractOperation mul = of.createOperation(OperationFactory.OPERATION_TYPE_MUL);
-        mul.setNumberA(3);
-        mul.setNumberB(4);
-        System.out.println(mul.getResult());
-
-        AbstractOperation div = of.createOperation(OperationFactory.OPERATION_TYPE_DIV);
-        div.setNumberA(3);
-        div.setNumberB(4);
-        System.out.println(div.getResult());
-        div.setNumberB(0);
-        System.out.println(div.getResult());
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("请输入数字A：");
+        double numberA = scanner.nextDouble();
+        System.out.println("请输入运算符号：");
+        String operationType = scanner.next();
+        System.out.println("请输入数字B：");
+        double numberB = scanner.nextDouble();
+        AbstractOperation operation = of.createOperation(operationType);
+        operation.setNumberA(numberA);
+        operation.setNumberB(numberB);
+        System.out.println(numberA + operationType + numberB + "=" + operation.getResult());
     }
 }
