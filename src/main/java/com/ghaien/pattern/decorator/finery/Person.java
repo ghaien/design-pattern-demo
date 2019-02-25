@@ -7,6 +7,8 @@ package com.ghaien.pattern.decorator.finery;
  * @date 2019/2/25 14:26
  */
 public interface Person {
-
+    /**
+     * 展示穿着
+     */
     void show();
 }

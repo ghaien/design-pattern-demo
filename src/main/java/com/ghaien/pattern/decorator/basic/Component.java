@@ -7,6 +7,8 @@ package com.ghaien.pattern.decorator.basic;
  * @date 2019/2/25 13:48
  */
 public interface Component {
-
+    /**
+     * 装饰方法
+     */
     void decoration();
 }
