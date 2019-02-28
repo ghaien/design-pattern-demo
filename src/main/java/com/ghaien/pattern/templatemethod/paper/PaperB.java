@@ -1,6 +1,8 @@
 package com.ghaien.pattern.templatemethod.paper;
 
 /**
+ * 考卷B
+ *
  * @author guo.haien
  * @date 2019/2/28 17:11
  */

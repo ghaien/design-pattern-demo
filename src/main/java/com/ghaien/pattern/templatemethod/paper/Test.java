@@ -1,6 +1,8 @@
 package com.ghaien.pattern.templatemethod.paper;
 
 /**
+ * 测试
+ *
  * @author guo.haien
  * @date 2019/2/28 17:12
  */

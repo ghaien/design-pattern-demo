@@ -1,11 +1,15 @@
 package com.ghaien.pattern.templatemethod.paper;
 
 /**
+ * 考卷抽象类
+ *
  * @author guo.haien
  * @date 2019/2/28 17:07
  */
 public abstract class AbstractPaper {
-
+    /**
+     * 抄写一张考卷
+     */
     public void createPaper() {
         question1();
         answerText();
@@ -18,19 +22,19 @@ public abstract class AbstractPaper {
         answer3();
     }
 
-    public void question1() {
+    private void question1() {
         System.out.println("问题1：");
     }
 
-    public void question2() {
+    private void question2() {
         System.out.println("问题2：");
     }
 
-    public void question3() {
+    private void question3() {
         System.out.println("问题3：");
     }
 
-    public void answerText() {
+    private void answerText() {
         System.out.print("答案：");
     }
 
