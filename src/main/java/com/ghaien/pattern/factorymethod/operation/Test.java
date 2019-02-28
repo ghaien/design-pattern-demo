@@ -27,7 +27,7 @@ public class Test {
                 of = new OperationSubFactory();
                 break;
             case "*":
-                of = new OperationSubFactory();
+                of = new OperationMulFactory();
                 break;
             case "/":
                 of = new OperationDivFactory();
