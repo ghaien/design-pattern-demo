@@ -4,6 +4,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
+import java.util.concurrent.atomic.AtomicLong;
 
 /**
  * 测试
@@ -24,10 +25,5 @@ public class Test {
         观察者A李四发现被观察者状态变为subjectState，并将自身状态更新为observerStateA
         观察者B王五发现被观察者状态变为subjectState，并将自身状态更新为observerStateB
          */
-
-        LocalDateTime start = LocalDateTime.of(LocalDate.now().plusDays(-1), LocalTime.MIN);
-        LocalDateTime end = LocalDateTime.of(LocalDate.now(), LocalTime.MIN);
-        System.out.println(start.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")));
-        System.out.println(end);
     }
 }
